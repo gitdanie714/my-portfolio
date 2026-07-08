@@ -21,7 +21,7 @@ export default function Hero() {
         </p>
         <div className="mt-10 flex flex-wrap gap-4">
           <a
-          href="https://drive.google.com/file/d/1g0k5r6J7x3X8F9K2L4J5M6N7O8P9Q0R/view?usp=sharing"
+          href="https://drive.google.com/file/d/1TXV_iKrfBdR3SBKZ8FAXhhQAlwSM6bQ-/view?usp=sharing"
             className="rounded-lg border border-line px-6 py-3 text-lg font-semibold text-primary transition-colors hover:bg-primary/10"
           >
              <SiReaddotcv className="inline h-7 w-7" />
