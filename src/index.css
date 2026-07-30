@@ -5,3 +5,48 @@
 body {
   @apply bg-background font-sans text-primary antialiased;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #bce7dd;
+  color: #071c23;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-enter { animation: hero-enter 600ms both ease-out; }
+.hero-enter-delay-1 { animation-delay: 90ms; }
+.hero-enter-delay-2 { animation-delay: 180ms; }
+.hero-enter-delay-3 { animation-delay: 270ms; }
+
+@keyframes hero-enter { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+
+.button-primary, .button-secondary, .contact-link, .inline-link, .social-link { @apply inline-flex items-center justify-center gap-2 transition duration-200; }
+.button-primary { @apply rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white shadow-sm hover:-translate-y-0.5 hover:bg-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2; }
+.button-secondary { @apply rounded-lg border border-line bg-white px-5 py-3 text-sm font-semibold text-primary hover:-translate-y-0.5 hover:border-accent hover:text-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2; }
+.social-link { @apply rounded-full border border-line p-2.5 hover:-translate-y-0.5 hover:border-accent hover:text-accent; }
+.inline-link { @apply border-b border-transparent pb-0.5 hover:border-accent hover:text-accent; }
+.contact-link { @apply rounded-lg bg-white px-4 py-2.5 text-sm font-semibold text-primary hover:-translate-y-0.5 hover:bg-accent hover:text-white; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal { opacity: 1; transform: none; }
+}
