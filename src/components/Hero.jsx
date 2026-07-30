@@ -2,7 +2,7 @@ import React from "react";
 import { FaArrowDown, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
 
-const resumeUrl = "https://drive.google.com/file/d/1TXV_iKrfBdR3SBKZ8FAXhhQAlwSM6bQ-/view?usp=sharing";
+const resumeUrl = "https://drive.google.com/file/d/1h2_SWphZo4qlAcfJ6O1oujzlgT03oaF6/view?usp=sharing";
 
 export default function Hero() {
   return (

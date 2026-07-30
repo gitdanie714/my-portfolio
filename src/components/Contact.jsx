@@ -10,7 +10,7 @@ export default function Contact() {
         <p className="max-w-lg text-lg leading-8 text-slate-300">Have a product that needs a careful eye? I’d love to connect about QA, testing, and building reliable user experiences.</p>
         <div className="flex flex-wrap gap-3">
           <a className="contact-link" href="mailto:daniellamarachi16@gmail.com"><HiOutlineMail /> Email</a>
-          <a className="contact-link" href="https://www.linkedin.com/in/daniella-garcia-714/" target="_blank" rel="noreferrer"><FaLinkedin /> LinkedIn</a>
+          <a className="contact-link" href="https://www.linkedin.com/in/daniella-amarachi/" target="_blank" rel="noreferrer"><FaLinkedin /> LinkedIn</a>
           <a className="contact-link" href="https://github.com/gitdanie714" target="_blank" rel="noreferrer"><FaGithub /> GitHub</a>
         </div>
       </div>
